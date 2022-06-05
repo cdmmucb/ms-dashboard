@@ -4,6 +4,21 @@ server:
 spring:
   application:
     name: ms-dashboard
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/waliki
+    username: mysql
+    password: mysql
+  data:
+    rest:
+      detection-strategy: ANNOTATED
+      base-path: /api
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
 
 eureka:
   instance:

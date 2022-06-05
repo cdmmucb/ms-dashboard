@@ -14,12 +14,12 @@ import java.util.List;
 @RestController
 @RequestMapping("v1/dashboard")
 public class DashboardController {
-   /* private DashboardRepository dashboardRepository;
+    private DashboardRepository dashboardRepository;
 
     @Autowired
     private DashboardController(DashboardRepository dashboardRepository) {
         this.dashboardRepository = dashboardRepository;
-    }*/
+    }
 
     @RequestMapping(value = "/prendassinstock", method = RequestMethod.GET)
     public ResponseEntity<Integer> getPrendasSinStock() {
